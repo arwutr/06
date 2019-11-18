@@ -1,3 +1,251 @@
+function myFunction() {
+  var z = document.getElementById("myText1").value;
+  document.getElementById('stkk').addEventListener('click', function () {
+        liff.sendMessages([{
+  "type": "flex",
+  "altText": "Sticker Flex Message",
+  "contents": {
+  "type": "bubble",
+  "size": "micro",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://stickershop.line-scdn.net/stickershop/v1/product/"+z+"/iphone/main@2x.png",
+        "aspectRatio": "1:1",
+        "aspectMode": "fit",
+        "size": "full"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Sticker LINE by armtrue",
+            "weight": "bold",
+            "align": "start",
+            "wrap": true,
+            "size": "xs",
+            "color": "#7886D8"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Click_"+z,
+                "size": "sm",
+                "color": "#999999",
+                "margin": "md",
+                "align": "start",
+                "wrap": true
+              }
+            ]
+          }
+        ],
+        "margin": "md",
+        "borderColor": "#3F59EC"
+      }
+    ]
+  },
+  "action": {
+    "type": "uri",
+    "label": "action",
+    "uri": "https://line.me/S/sticker/"+z
+  }
+}
+}]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    }); 
+}
+
+
+
+function my1Function() {
+  var a = document.getElementById("myText1").value;
+  document.getElementById('astkk').addEventListener('click', function () {
+        liff.sendMessages([{
+  "type": "template",
+  "altText": "สอบถามเพิ่มเติมที่ ID  armtrue",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "uri",
+        "label": "คลิกเพื่อดูรายละเอียด",
+        "uri": "line://shop/detail/"+a
+      },
+      {
+        "type": "uri",
+        "label": "แชร์",
+        "uri": "https://line.me/R/app/1553266645-EX300kAj?code=stk&stickerId="+a
+      }
+    ],
+    "thumbnailImageUrl": "https://sdl-stickershop.line.naver.jp/stickershop/v1/product/"+a+"/iphone/main@2x.png",
+    "imageAspectRatio": "square",
+      "imageSize": "contain",
+"wrap": true,
+    "title": "Present by armtrue",
+    "text": "รหัส_"+a,
+  }
+}]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    }); 
+}
+
+
+
+function mymetaFunction() {
+  var z = document.getElementById("myText1").value;
+  location.replace("http://dl.stickershop.line.naver.jp/products/0/0/1/"+z+"/android/productInfo.meta");
+}
+
+
+
+
+
+function my2Function() {
+  var p = document.getElementById("myText1").value;
+  document.getElementById('pstkk').addEventListener('click', function () {
+        liff.sendMessages([{
+  "type": "template",
+  "altText": "สอบถามเพิ่มเติมที่ ID  armtrue",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "uri",
+        "label": "คลิกเพื่อดูรายละเอียด",
+        "uri": "line://shop/detail/"+p
+      },
+      {
+        "type": "uri",
+        "label": "แชร์",
+        "uri": "https://line.me/R/msg/text/line://shop/detail/"+p
+      }
+    ],
+    "thumbnailImageUrl": "https://sdl-stickershop.line.naver.jp/stickershop/v1/product/"+p+"/IOS/main_popup.png",
+    "imageAspectRatio": "square",
+      "imageSize": "contain",
+"wrap": true,
+    "title": "Present by armtrue",
+    "text": "รหัส_"+p,
+  }
+}]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    }); 
+}
+function my3Function() {
+  var g = document.getElementById("myText4").value;
+  var h = document.getElementById("myText5").value;
+  document.getElementById('instkk').addEventListener('click', function () {
+        liff.sendMessages([{
+  "type": "template",
+  "altText": "สอบถามเพิ่มเติมที่ ID  armtrue",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "uri",
+        "label": "คลิกเพื่อดูรายละเอียด",
+        "uri": "line://shop/detail/"+g
+      },
+      {
+        "type": "uri",
+        "label": "แชร์",
+        "uri": "https://line.me/R/msg/text/line://shop/detail/"+g
+      }
+    ],
+    "thumbnailImageUrl": "https://sdl-stickershop.line.naver.jp/stickershop/v1/sticker/"+h+"/IOS/sticker@2x.png",
+    "imageAspectRatio": "square",
+      "imageSize": "contain",
+"wrap": true,
+    "title": "Present by armtrue",
+    "text": "ประเภท Sticker"
+  }
+}]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    }); 
+document.getElementById('inastkk').addEventListener('click', function () {
+        liff.sendMessages([{
+  "type": "template",
+  "altText": "สอบถามเพิ่มเติมที่ ID  armtrue",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "uri",
+        "label": "คลิกเพื่อดูรายละเอียด",
+        "uri": "line://shop/detail/"+g
+      },
+      {
+        "type": "uri",
+        "label": "แชร์",
+        "uri": "https://line.me/R/msg/text/line://shop/detail/"+g
+      }
+    ],
+    "thumbnailImageUrl": "https://sdl-stickershop.line.naver.jp/stickershop/v1/sticker/"+h+"/IOS/sticker_animation@2x.png",
+    "imageAspectRatio": "square",
+      "imageSize": "contain",
+"wrap": true,
+    "title": "Present by armtrue",
+    "text": "ประเภท Sticker Animation"
+  }
+}]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    });
+document.getElementById('inpstkk').addEventListener('click', function () {
+        liff.sendMessages([{
+  "type": "template",
+  "altText": "สอบถามเพิ่มเติมที่ ID  armtrue",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "uri",
+        "label": "คลิกเพื่อดูรายละเอียด",
+        "uri": "line://shop/detail/"+g
+      },
+      {
+        "type": "uri",
+        "label": "แชร์",
+        "uri": "https://line.me/R/msg/text/line://shop/detail/"+g
+      }
+    ],
+    "thumbnailImageUrl": "https://sdl-stickershop.line.naver.jp/stickershop/v1/sticker/"+h+"/IOS/sticker_popup.png",
+    "imageAspectRatio": "square",
+      "imageSize": "contain",
+	"wrap": true,
+    "title": "Present by armtrue",
+    "text": "ประเภท Sticker Popup"
+  }
+}]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    });
+}
 function mytFunction() {
   var j = document.getElementById("txtmyText").value;
   document.getElementById('ftxt').addEventListener('click', function () {
@@ -151,8 +399,102 @@ function mytFunction() {
     }); 
 }
 
+function my9Function() {
+  var k = document.getElementById("urllink").value;
+  var l = document.getElementById("url1link").value;
+  document.getElementById('al1temp').addEventListener('click', function () {
+        liff.sendMessages([{
+    "type": "template",
+    "altText": "Sent Sticker",
+    "template": {
+      "type": "image_carousel",
+      "columns": [
+        {
+          "imageUrl": "https://sdl-stickershop.line.naver.jp/stickershop/v1/sticker/"+Math.floor((Math.random() * 14735469) + 2148)+"/android/sticker.png",
+          "action": {
+            "type": "uri",
+            "uri": "https://line.me/R/app/1583925164-emW44MM7"
+          }
+        }
+      ]
+    }
+  }]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    }); 
+  document.getElementById('al2temp').addEventListener('click', function () {
+        liff.sendMessages([{
+    "type": "template",
+    "altText": "Sent Sticker",
+    "template": {
+      "type": "image_carousel",
+      "columns": [
+        {
+          "imageUrl": "https://sdl-stickershop.line.naver.jp/stickershop/v1/sticker/"+k+"/IOS/sticker_animation@2x.png",
+          "action": {
+            "type": "uri",
+            "uri": "line://shop/detail/"+l
+          }
+        }
+      ]
+    }
+  }]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    }); 
+  document.getElementById('al3temp').addEventListener('click', function () {
+        liff.sendMessages([{
+    "type": "template",
+    "altText": "Sent Sticker",
+    "template": {
+      "type": "image_carousel",
+      "columns": [
+        {
+          "imageUrl": "https://sdl-stickershop.line.naver.jp/stickershop/v1/sticker/"+k+"/IOS/sticker_popup.png",
+          "action": {
+            "type": "uri",
+            "uri": "line://shop/detail/"+l
+          }
+        }
+      ]
+    }
+  }]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    }); 
+  document.getElementById('al4temp').addEventListener('click', function () {
+        liff.sendMessages([{
+    "type": "template",
+    "altText": "Sent Sticker",
+    "template": {
+      "type": "image_carousel",
+      "columns": [
+        {
+          "imageUrl": ""+k,
+          "action": {
+            "type": "uri",
+            "uri": "line://shop/detail/"+l
+          }
+        }
+      ]
+    }
+  }]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    }); 	
 	
-
+	
+	
+	
+}
 function my67Function() {
     var x = document.getElementById("ffmelody").value;
   document.getElementById('sffmelody').addEventListener('click', function () {
@@ -233,12 +575,10 @@ function my67Function() {
         });
     }); 
 }
-
-
-function my91Function() {
-    var a = document.getElementById("a91").value;
-    var b = document.getElementById("b91").value;
-  document.getElementById('my91').addEventListener('click', function () {
+function my66Function() {
+    var x = document.getElementById("urlf").value;
+    var y = document.getElementById("itttextf").value;
+  document.getElementById('urlltxt5f').addEventListener('click', function () {
         liff.sendMessages([{
     "type": "flex",
     "altText": "Rich Message",
@@ -251,7 +591,7 @@ function my91Function() {
     "contents": [
       {
         "type": "image",
-        "url": ""+a,
+        "url": ""+x,
         "size": "full",
         "aspectMode": "fit",
         "aspectRatio": "1:1",
@@ -266,7 +606,7 @@ function my91Function() {
             "text": "cr.armtrue",
             "color": "#ffffff"
           }
-        ],FF0033
+        ],
         "position": "absolute",
         "offsetBottom": "0px",
         "offsetStart": "0px",
@@ -279,7 +619,7 @@ function my91Function() {
   "action": {
     "type": "uri",
     "label": "action",
-    "uri": ""+b
+    "uri": ""+y
   }
 }
   }]).then(function () {
@@ -289,8 +629,6 @@ function my91Function() {
         });
     }); 
 }
-
-
 function my55Function() {
     var ก = document.getElementById("urll").value;
     var ข = document.getElementById("itttext").value;
