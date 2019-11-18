@@ -316,8 +316,8 @@ function my55Function() {
 function my92Function() {
     var c = document.getElementById("92c").value;
     var d = document.getElementById("92d").value;
-    var e = document.getElementById("92e").value;
-    var f = document.getElementById("92f").value;
+    var a = document.getElementById("91a").value;
+    var b = document.getElementById("91b").value;
   document.getElementById('tpurlltxt5').addEventListener('click', function () {
         liff.sendMessages([{
   "type": "template",
@@ -328,15 +328,15 @@ function my92Function() {
       {
         "type": "uri",
         "label": "คลิกดูรายละเอียด",
-        "uri": ""+f
+        "uri": ""+b
       }
     ],
-    "thumbnailImageUrl": ""+c,
+    "thumbnailImageUrl": ""+a,
     "imageAspectRatio": "square",
       "imageSize": "contain",
 "wrap": true,
-    "title": ""+d,
-    "text": ""+e
+    "title": ""+c,
+    "text": ""+d
   }
 }]).then(function () {
             liff.closeWindow();
