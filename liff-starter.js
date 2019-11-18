@@ -313,11 +313,11 @@ function my55Function() {
     }); 
 }
 
-function my56Function() {
-    var a = document.getElementById("tpurll").value;
-    var b = document.getElementById("tp1text").value;
-    var x = document.getElementById("tpll").value;
-    var y = document.getElementById("tpurllink").value;
+function my92Function() {
+    var c = document.getElementById("92c").value;
+    var d = document.getElementById("92d").value;
+    var e = document.getElementById("92e").value;
+    var f = document.getElementById("92f").value;
   document.getElementById('tpurlltxt5').addEventListener('click', function () {
         liff.sendMessages([{
   "type": "template",
@@ -328,15 +328,15 @@ function my56Function() {
       {
         "type": "uri",
         "label": "คลิกดูรายละเอียด",
-        "uri": ""+y
+        "uri": ""+f
       }
     ],
-    "thumbnailImageUrl": ""+a,
+    "thumbnailImageUrl": ""+c,
     "imageAspectRatio": "square",
       "imageSize": "contain",
 "wrap": true,
-    "title": ""+b,
-    "text": ""+x
+    "title": ""+d,
+    "text": ""+e
   }
 }]).then(function () {
             liff.closeWindow();
@@ -345,6 +345,8 @@ function my56Function() {
         });
     }); 
 }
+
+
 function orderFunction() {
     var o = document.getElementById("orderstic").value;
     var p = document.getElementById("coststk").value;
