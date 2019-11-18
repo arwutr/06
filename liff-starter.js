@@ -264,7 +264,7 @@ function my91Function() {
           {
             "type": "text",
             "text": "cr.armtrue",
-            "color": "#ffffff"
+            "color": ""
           }
         ],
         "position": "absolute",
