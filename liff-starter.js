@@ -318,7 +318,7 @@ function my92Function() {
     var d = document.getElementById("92d").value;
     var a = document.getElementById("91a").value;
     var b = document.getElementById("91b").value;
-  document.getElementById('tpurlltxt5').addEventListener('click', function () {
+  document.getElementById('my92').addEventListener('click', function () {
         liff.sendMessages([{
   "type": "template",
   "altText": "ผลิต template by armtrue",
