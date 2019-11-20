@@ -369,12 +369,12 @@ function my93Function() {
             "text": ""+c,
             "wrap": true,
             "size": "md",
-            "align": "center",
+            "align": "left",
             "weight": "bold",
-            "color": "#FFFF00"
+            "color": "#FF0066"
           },
          ],
-        "backgroundColor": "#000000"
+        "backgroundColor": "#00BFFF"
           }
         }
       ]
