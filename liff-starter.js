@@ -369,7 +369,7 @@ function my93Function() {
             "text": ""+c,
             "wrap": true,
             "size": "md",
-            "align": "left",
+            "align": "center",
             "weight": "bold",
             "color": "#A52A2A"
           },
