@@ -368,7 +368,7 @@ function my93Function() {
             "type": "text",
             "text": ""+c,
             "wrap": true,
-            "size": "3xl",
+            "size": "4xl",
             "align": "center",
             "weight": "bold",
             "color": "#FF1493"
