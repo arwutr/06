@@ -359,7 +359,7 @@ function my93Function() {
   "contents": [
     {
       "type": "bubble",
-      "size": "micro",
+      "size": "mega",
       "body": {
         "type": "box",
         "layout": "vertical",
