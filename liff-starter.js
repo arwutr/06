@@ -374,7 +374,7 @@ function my93Function() {
             "color": "#A52A2A"
           },
          ],
-        "backgroundColor": "#EEE8AA00"
+        "backgroundColor": "#EEE8AA"
           }
         }
       ]
