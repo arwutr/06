@@ -371,10 +371,10 @@ function my93Function() {
             "size": "md",
             "align": "left",
             "weight": "bold",
-            "color": "#FF0066"
+            "color": "#A52A2A"
           },
          ],
-        "backgroundColor": "#00BFFF"
+        "backgroundColor": "#EEE8AA"
           }
         }
       ]
