@@ -347,6 +347,47 @@ function my92Function() {
 }
 
 
+
+function my93Function() {
+ var c = document.getElementById("92c").value;
+  document.getElementById('my93').addEventListener('click', function () {
+        liff.sendMessages([{
+    "type": "flex",
+    "altText": c,
+    "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "micro",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": ""+c,
+            "wrap": true,
+            "size": "md",
+            "align": "center",
+            "weight": "bold",
+            "color": "#FFFF00"
+          },
+         ],
+        "backgroundColor": "#000000"
+          }
+        }
+      ]
+    }
+  }]).then(function () {
+            liff.closeWindow();
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    }); 
+}
+
+
 function orderFunction() {
     var o = document.getElementById("orderstic").value;
     var p = document.getElementById("coststk").value;
