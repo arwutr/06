@@ -374,7 +374,7 @@ function my93Function() {
             "color": "#FF1493"
           },
          ],
-        "backgroundColor": "#00FFFF"
+        "backgroundColor": "#"+Math.floor((Math.random() * 900000) + 100000)
           }
         }
       ]
