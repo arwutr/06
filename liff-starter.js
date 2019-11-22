@@ -390,65 +390,7 @@ function my93Function() {
 
 
 
-function my94Function() {
- var c = document.getElementById("92c").value;
-  document.getElementById('my94').addEventListener('click', function () {
-        liff.sendMessages([{
-  "type": "flex",
-  "altText": "ฉันชื่อ"+profile.displayName,
-  "contents": {
-  "type": "bubble",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "image",
-                "url": profile.pictureUrl,
-                "aspectMode": "cover",
-                "size": "full"
-	      }      
-            ]
-	    }      
-            ]
-	      }      
-            ],
-            "cornerRadius": "180px",
-            "width": "72px",
-            "height": "72px"
-         
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": profile.displayName,
-                "wrap": true,
-                "weight": "bold",
-                "size": "lg"
-                "color": "#FF1493"
-  	  ]
-    }
-	  ]
-    },
-		
-		
-  }]).then(function () {
-            liff.closeWindow();
-        }).catch(function (error) {
-            window.alert("Error sending message: " + error);
-        });
-    }); 
-}			  
+		  
 			  
 
 
