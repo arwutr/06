@@ -415,16 +415,12 @@ function my94Function() {
                 "url": profile.pictureUrl,
                 "aspectMode": "cover",
                 "size": "full"
-              }
-            ]		      
-	    }
-            ]	      
-            }
+		}      
             ],
             "cornerRadius": "180px",
             "width": "72px",
             "height": "72px"
-          },
+         
           {
             "type": "box",
             "layout": "vertical",
@@ -436,20 +432,16 @@ function my94Function() {
                 "weight": "bold",
                 "size": "lg"
                 "color": "#FF1493"
-              },
-              {
-                "type": "text",
-                "contents": [
-                  {
-                    "type": "span",
-                    "text": c
-
-                  }
-                ],
-             }
-        }
       ]
     }
+      ]
+    }
+	          ]
+    }
+	        ]
+    }
+		
+		
   }]).then(function () {
             liff.closeWindow();
         }).catch(function (error) {
